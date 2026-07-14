@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victor Turatti de Oliveira | Engenheiro da Computação</title>
+  <meta name="description" content="Portfólio profissional de Victor Turatti de Oliveira — Engenheiro da Computação, especialista em ERP Protheus, Infraestrutura de TI e Gestão de Sistemas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ===== PARTICLE CANVAS ===== -->
+  <canvas id="particles"></canvas>
+
+  <!-- ===== CUSTOM CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <a href="#hero" class="nav-logo">&lt;VT /&gt;</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about" data-text="Sobre">Sobre</a></li>
+      <li><a href="#experience" data-text="Experiência">Experiência</a></li>
+      <li><a href="#skills" data-text="Skills">Skills</a></li>
+      <li><a href="#projects" data-text="Projetos">Projetos</a></li>
+      <li><a href="#contact" data-text="Contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Disponível para novas oportunidades
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-greeting">Olá, eu sou</span>
+        <span class="hero-name glitch" data-text="Victor Turatti">Victor Turatti</span>
+      </h1>
+      <div class="hero-role">
+        <span class="role-prefix">&gt;&nbsp;</span>
+        <span class="typing" id="typingText"></span>
+        <span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-description">
+        Engenheiro da Computação com experiência em <strong>ERP Protheus</strong>, 
+        <strong>Infraestrutura de TI</strong> e <strong>Gestão de Sistemas</strong>. 
+        Transformo desafios tecnológicos em soluções que impulsionam negócios.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn btn-primary">
+          <span>Entre em Contato</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#experience" class="btn btn-ghost">
+          <span>Ver Experiência</span>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Anos de Experiência</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="2">0</span>
+          <span class="stat-label">Empresas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-label">Projetos Realizados</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="code-window">
+        <div class="code-header">
+          <div class="code-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="code-title">victor_turatti.json</span>
+        </div>
+        <pre class="code-body"><code>{
+  <span class="key">"nome"</span>: <span class="string">"Victor Turatti de Oliveira"</span>,
+  <span class="key">"idade"</span>: <span class="number">24</span>,
+  <span class="key">"formação"</span>: <span class="string">"Engenharia da Computação"</span>,
+  <span class="key">"especialidades"</span>: [
+    <span class="string">"ERP Protheus"</span>,
+    <span class="string">"Infraestrutura de TI"</span>,
+    <span class="string">"Gestão de Sistemas"</span>,
+    <span class="string">"Desenvolvimento Web"</span>
+  ],
+  <span class="key">"status"</span>: <span class="string">"Open to Work"</span>,
+  <span class="key">"café"</span>: <span class="boolean">true</span>
+}</code></pre>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;sobre /&gt;</span>
+        <h2 class="section-title">Quem sou eu</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            Sou <strong>Victor Turatti de Oliveira</strong>, tenho 24 anos e sou formado em 
+            <strong>Engenharia da Computação</strong>. Minha jornada na tecnologia começou na 
+            universidade, onde desenvolvi projetos variados — de sites a dispositivos IoT — e 
+            evoluiu para experiências profissionais que me deram uma visão completa do mundo de TI corporativo.
+          </p>
+          <p>
+            Na <strong>TOTVS</strong>, mergulhei no universo ERP Protheus, dominando módulos essenciais 
+            e desenvolvendo habilidades em infraestrutura, BI e capacitação de usuários. Esse conhecimento 
+            me preparou para o desafio atual: ser responsável por <strong>toda a área de TI</strong> da 
+            Endomaster, uma empresa de equipamentos de videocirurgia.
+          </p>
+          <p>
+            Acredito que a tecnologia é a ponte entre problemas complexos e soluções elegantes. 
+            Estou sempre em busca de novos desafios que me permitam crescer e impactar positivamente.
+          </p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="info-card">
+            <div class="info-icon">🎓</div>
+            <div class="info-content">
+              <h4>Formação</h4>
+              <p>Engenharia da Computação</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">📍</div>
+            <div class="info-content">
+              <h4>Localização</h4>
+              <p>São Paulo, Brasil</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">💼</div>
+            <div class="info-content">
+              <h4>Experiência</h4>
+              <p>+3 anos na área de TI</p>
+            </div>
+          </div>
+          <div class="info-card">
+            <div class="info-icon">🚀</div>
+            <div class="info-content">
+              <h4>Foco</h4>
+              <p>ERP & Infraestrutura</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;experiência /&gt;</span>
+        <h2 class="section-title">Trajetória Profissional</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <!-- ENDOMASTER -->
+        <div class="timeline-item reveal" data-side="right">
+          <div class="timeline-dot active">
+            <span class="dot-pulse"></span>
+          </div>
+          <div class="timeline-card">
+            <div class="timeline-badge current">Atual</div>
+            <div class="timeline-period">2026 — Presente</div>
+            <h3 class="timeline-role">Analista de TI</h3>
+            <h4 class="timeline-company">Endomaster</h4>
+            <p class="timeline-desc">
+              Empresa de equipamentos de videocirurgia para procedimentos minimamente invasivos.
+            </p>
+            <ul class="timeline-tasks">
+              <li>Responsável por gerenciar toda a infraestrutura e sistemas internos de TI</li>
+              <li>Manutenção de servidores e gerenciamento de rede</li>
+              <li>Administração de usuários, sistemas e segurança</li>
+              <li>Suporte e customização do ERP Protheus</li>
+              <li>Gestão de contratos e fornecedores de tecnologia</li>
+            </ul>
+            <div class="timeline-techs">
+              <span class="tech-tag">Protheus</span>
+              <span class="tech-tag">Windows Server</span>
+              <span class="tech-tag">Redes</span>
+              <span class="tech-tag">Active Directory</span>
+              <span class="tech-tag">AdvPL</span>
+            </div>
+          </div>
+        </div>
+        <!-- TOTVS -->
+        <div class="timeline-item reveal" data-side="left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-period">2024 — 2026</div>
+            <h3 class="timeline-role">Estagiário de TI</h3>
+            <h4 class="timeline-company">TOTVS — Ibirapuera</h4>
+            <p class="timeline-desc">
+              Líder em tecnologia para gestão empresarial no Brasil.
+            </p>
+            <ul class="timeline-tasks">
+              <li>Domínio do quarteto de módulos ERP: Compras, Estoque, Faturamento e Financeiro</li>
+              <li>Capacitação de clientes na ferramenta SmartView (geração de relatórios)</li>
+              <li>Customização e manutenção de dashboards no BI GoodData</li>
+              <li>Execução de viradas de release e atualização de ambientes</li>
+              <li>Desenvolvimento de relatórios com extração em Excel</li>
+              <li>Suporte em infraestrutura e serviços do sistema</li>
+            </ul>
+            <div class="timeline-techs">
+              <span class="tech-tag">Protheus</span>
+              <span class="tech-tag">AdvPL</span>
+              <span class="tech-tag">SmartView</span>
+              <span class="tech-tag">GoodData</span>
+              <span class="tech-tag">SQL</span>
+              <span class="tech-tag">TOTVS BI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;skills /&gt;</span>
+        <h2 class="section-title">Habilidades & Tecnologias</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <!-- ERP & Sistemas -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>ERP & Sistemas</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-badge">TOTVS Protheus</span>
+            <span class="skill-badge">Módulos ERP (Quarteto)</span>
+            <span class="skill-badge">AdvPL</span>
+            <span class="skill-badge">SmartView</span>
+            <span class="skill-badge">GoodData BI</span>
+            <span class="skill-badge">Relatórios Customizados</span>
+            <span class="skill-badge">Integração de Sistemas</span>
+          </div>
+        </div>
+        <!-- Infraestrutura -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><circle cx="6" cy="6" r="1"/><circle cx="6" cy="18" r="1"/></svg>
+            </div>
+            <h3>Infraestrutura</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-badge">Windows Server</span>
+            <span class="skill-badge">Redes & Cabeamento</span>
+            <span class="skill-badge">Active Directory</span>
+            <span class="skill-badge">Manutenção de Servidores</span>
+            <span class="skill-badge">Gestão de Usuários</span>
+            <span class="skill-badge">Segurança de TI</span>
+            <span class="skill-badge">Suporte Técnico</span>
+          </div>
+        </div>
+        <!-- Desenvolvimento -->
+        <div class="skill-category reveal">
+          <div class="skill-category-header">
+            <div class="skill-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Desenvolvimento</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-badge">HTML5 / CSS3</span>
+            <span class="skill-badge">JavaScript (ES6)</span>
+            <span class="skill-badge">SQL (Banco de Dados)</span>
+            <span class="skill-badge">IoT / Hardware</span>
+            <span class="skill-badge">Git & GitHub</span>
+            <span class="skill-badge">Excel / VBA</span>
+            <span class="skill-badge">Lógica de Programação</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;projetos /&gt;</span>
+        <h2 class="section-title">Projetos em Destaque</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card reveal">
+          <div class="project-icon">🏗️</div>
+          <div class="project-type">Profissional</div>
+          <h3>Gerenciamento de TI — Endomaster</h3>
+          <p>
+            Atuação como primeiro profissional de TI interno da empresa, gerenciando e otimizando a infraestrutura existente (servidores, rede, ERP Protheus), definindo políticas de segurança e fornecendo suporte técnico direto.
+          </p>
+          <div class="project-techs">
+            <span>Protheus</span>
+            <span>Windows Server</span>
+            <span>Redes</span>
+            <span>AD</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">📊</div>
+          <div class="project-type">Profissional</div>
+          <h3>Customização BI — TOTVS GoodData</h3>
+          <p>
+            Customização de dashboards e relatórios no GoodData para clientes TOTVS, 
+            otimizando a visualização de dados estratégicos do ERP.
+          </p>
+          <div class="project-techs">
+            <span>GoodData</span>
+            <span>BI</span>
+            <span>MAQL</span>
+            <span>SQL</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">🔌</div>
+          <div class="project-type">Acadêmico</div>
+          <h3>Tomada Inteligente IoT</h3>
+          <p>
+            Projeto completo de IoT: desenvolvimento do hardware (circuito eletrônico) e do aplicativo 
+            mobile para monitoramento e controle remoto de energia.
+          </p>
+          <div class="project-techs">
+            <span>IoT</span>
+            <span>Hardware</span>
+            <span>App Mobile</span>
+            <span>Eletrônica</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">🌐</div>
+          <div class="project-type">Acadêmico</div>
+          <h3>Desenvolvimento de Sites</h3>
+          <p>
+            Criação de websites durante a graduação, aplicando conceitos de design responsivo, 
+            UX/UI e tecnologias web modernas.
+          </p>
+          <div class="project-techs">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>Responsivo</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">📋</div>
+          <div class="project-type">Profissional</div>
+          <h3>Capacitação SmartView</h3>
+          <p>
+            Elaboração e condução de treinamentos para clientes na ferramenta SmartView, 
+            ensinando geração de relatórios customizados no ERP Protheus.
+          </p>
+          <div class="project-techs">
+            <span>SmartView</span>
+            <span>Treinamento</span>
+            <span>Protheus</span>
+          </div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-icon">🔄</div>
+          <div class="project-type">Profissional</div>
+          <h3>Viradas de Release</h3>
+          <p>
+            Planejamento e execução de atualizações de versão do ERP Protheus em ambientes 
+            de produção de múltiplos clientes.
+          </p>
+          <div class="project-techs">
+            <span>Protheus</span>
+            <span>Release Management</span>
+            <span>Deploy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">&lt;contato /&gt;</span>
+        <h2 class="section-title">Vamos Conversar?</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content reveal">
+        <p class="contact-intro">
+          Estou aberto a novas oportunidades e desafios. Se você tem um projeto interessante 
+          ou uma vaga que combina com meu perfil, ficarei feliz em conversar!
+        </p>
+        <div class="contact-cards">
+          <a href="mailto:victorturattioliveira@gmail.com" class="contact-card" id="emailCard">
+            <div class="contact-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+            </div>
+            <h4>E-mail</h4>
+            <span>victorturattioliveira@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/victor-turatti-de-oliveira" target="_blank" rel="noopener" class="contact-card" id="linkedinCard">
+            <div class="contact-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </div>
+            <h4>LinkedIn</h4>
+            <span>/in/victor-turatti-de-oliveira</span>
+          </a>
+        </div>
+        <a href="mailto:victorturattioliveira@gmail.com" class="btn btn-primary btn-large">
+          <span>Enviar E-mail</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <span class="footer-logo">&lt;VT /&gt;</span>
+        <p>&copy; 2026 Victor Turatti de Oliveira. Todos os direitos reservados.</p>
+        <div class="footer-links">
+          <a href="mailto:victorturattioliveira@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,4 12,13 2,4"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/victor-turatti-de-oliveira" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
